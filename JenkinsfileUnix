@@ -5,6 +5,7 @@ pipeline {
             steps {
                 withMaven(maven : 'maven361'){
                         sh "mvn clean compile"
+                        echo "Hello Hridaya in build stage "
                 }
             }
         }
